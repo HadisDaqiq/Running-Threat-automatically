@@ -18,29 +18,21 @@ class Main extends Timer{
     
     
     Timer timer=new Timer();
+    //set the timer to run csv_parser every 5 seconds. 
     timer.scheduleAtFixedRate(csv_parser, 0,5*1000);
-    
-   
     
   }
   
 
  
-  
+//https://docs.google.com/spreadsheets/d/e/2PACX-1vQDhukToZsrxdHqr6zbbOmAyLCmz8sc6yeuuCRx3DnB4IV_08OP1LgPgTlxZFEeV3nDzv7ajoEgO-8G/pubhtml?gid=0&single=true  
 
   
 //see if it will take a url. 
-//and file.
 //invoke a wget...
 //www.google,com pass an d search strin.
-//loop over all the dates.
-//and check if it matches today's date.
-//research what scedule  is.
+  
 }
-
-
-
-
 
 
 

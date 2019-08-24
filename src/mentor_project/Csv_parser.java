@@ -28,7 +28,6 @@ public class Csv_parser extends TimerTask{
 		
 		
 	void checkSubscriptionsForToday() throws IOException{
-		 //BufferedReader csvReader = new BufferedReader(new FileReader("src/test.csv"));
 		   BufferedReader csvReader = new BufferedReader(new FileReader("src/test.csv"));
 		    String row = "";
 		    DateTimeFormatter dtf = DateTimeFormatter.ofPattern("M/dd/yyyy");
@@ -36,10 +35,10 @@ public class Csv_parser extends TimerTask{
 		  	String formattedLocalDate = dtf.format(localDate);
 		  	
 		  	
-//		  	System.out.println(dtf.format(localDate)); //2016/11/16
+
 		    while ((row = csvReader.readLine()) != null) {
 		      String[] rowData = row.split(",");
-//		      System.out.println(rowData[0]);
+
 		      
 		     
 		      if(rowData[1].equals(formattedLocalDate)) {
